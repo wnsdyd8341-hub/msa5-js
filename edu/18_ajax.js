@@ -8,6 +8,8 @@ form.addEventListener('submit',async(e)=>{
     const path = '/v2/list';
 
     const page = e.target.page.value;
+    console.log(page);
+    
     const limit = e.target.limit.value;
     
     const url = `${baseURL}${path}?page=${page}&limit=${limit}`;
